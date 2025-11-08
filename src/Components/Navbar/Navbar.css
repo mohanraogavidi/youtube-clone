@@ -38,9 +38,9 @@ nav{
     border-radius: 50%;
 }
 @media (max-width: 900px) {
-    .menu-icon{
+    /* .menu-icon{
         display: none;
-    }
+    } */
     .nav-right img{
         display: none;
     }

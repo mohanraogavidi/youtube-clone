@@ -4,8 +4,10 @@
     height: 100vh;
     position: fixed;
     top: 0;
+    left: 0;
     padding-left: 2%;
     padding-top: 80px;
+    transition: width 0.3s ease, padding 0.3s ease;
 }
 .shortcut-links img{
     width: 20px;
@@ -16,7 +18,7 @@
     align-items: center;
     margin-bottom: 20px;
     width: fit-content;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     cursor: pointer;
 }
 .sidebar hr{
@@ -52,11 +54,25 @@
     padding-bottom: 2px;
     border-bottom: 3px solid red;
 }
+.small-sidebar hr{
+    width: 50%;
+    margin-bottom: 25px;
+}
 @media (max-width: 900px) {
     .sidebar{
-        display: none;
+        display: block;
+        width: 10%;
     }
     .small-sidebar{
         display: block;
+    }
+    .sidebar p, .sidebar h3 {
+        display: none;
+    }
+    .side-links {
+        justify-content: center;
+    }
+    .shortcut-links img {
+        margin-right: 5pc;
     }
 }
